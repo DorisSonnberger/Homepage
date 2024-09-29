@@ -79,13 +79,64 @@
        url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
+/* CSS für Fade-In und Fade-Out */
+.fade-in {
+    animation: fadeIn 1s forwards; /* 1 Sekunde für Fade-In */
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards; /* 1 Sekunde für Fade-Out */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Beginn mit 0% Sichtbarkeit */
+    }
+    to {
+        opacity: 1; /* Ende mit 100% Sichtbarkeit */
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1; /* Beginn mit 100% Sichtbarkeit */
+    }
+    to {
+        opacity: 0; /* Ende mit 0% Sichtbarkeit */
+    }
+}
+
+
+
+
+.navbar-nav a {
+	color:black;
+	margin-right: 5px;}
+
+.navbar-nav a:hover {
+	color:orange;
+	transform: scale(1);
+	transition: 0.3s;}
+
+.navbar-collapse {
+    justify-content: flex-end; /* Richtet die Links am rechten Rand aus */
+}
+
+.navbar-nav {
+    display: flex; /* Setzt die Navbar-Elemente in eine Flexbox */
+    flex-direction: column; /* Stellt die Links untereinander auf */
+}
+
+
+.nav-link {
+    text-align: right; /* Text in den Links rechts ausrichten */
+    transition: none; /* Verhindert, dass sich die Größe oder der Abstand ändert */
+    padding: 10px 15px; /* Setzt festen Padding für Links */
+}
+
 
 .navbar-toggler {
     border: none; /* Entfernt den Rahmen */
-}
-
-.navbar-toggler:focus {
-    outline: none; /* Entfernt den Fokus-Rahmen */
 }
 
 .navbar-toggler .navbar-toggler-icon {
@@ -118,8 +169,9 @@
 /* Entfernt den Rahmen des Navbar-Togglers bei Fokus */
 .navbar-toggler:focus {
     outline: none; /* Entfernt den Standard-Fokusrahmen */
-    box-shadow: none; /* Entfernt den Schatteneffekt */
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3); /* Schattierung um den Toggler */
 }
+    
 
 
 
@@ -157,14 +209,7 @@ footer .row {
 	padding-right: 20px;
 	padding-left: 20px;}
 
-.navbar-nav a {
-	color:black;
-	margin-right: 5px;}
 
-.navbar-nav a:hover {
-	color: black;
-	transform: scale(1.1);
-	transition: 0.3s;}
 
 #picture {
 	background-image: url("Datein/kelly-sikkema-TtsKN6qSf9A-unsplash.jpg");
