@@ -81,28 +81,26 @@
 
 html {scroll-behavior: smooth;}
 
-.header {background-color: black;}
+.header {background-color:white;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 20px;
+		padding-left: 20px;}
 
-.navbar-nav a {color: white;
-			   padding-right: 30px;}
-.navbar-nav a:hover {color: white;
+.navbar-nav a {color:black;
+			   margin-right: 5px;}
+
+.navbar-nav a:hover {color: black;
 					transform: scale(1.1);
 					transition: 0.3s;}
 
 
-.bg-dark {background-color: rgba(0,0,0,0.00)var(--bs-bg-opacity) !important;}
-
-
-.btn {background-color: darkorange;
-	  color: beige;
-	  font-family: Montserrat;
-	  font-weight: 600;
-	  font-size: 30px;
-	  border-color: darkorange;}
- 
-.btn:hover {background-color: beige;
-  			color: darkorange;
-  			border-color: darkorange}
+#picture {
+	background-image: url("Datein/kelly-sikkema-TtsKN6qSf9A-unsplash.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding-bottom: 800px;}
 
 .header-text {text-align: center;}
 
@@ -131,8 +129,8 @@ header h4 {text-align: center;
 		   padding-top: 300px;}
 
 p {text-align: center;
-   font-family: Merriweather;
-   font-style: italic;
+   font-family: Montserrat;
+   font-style: normal;
    font-weight: 400;
    font-size: 16px;
    padding-bottom: 30px;}
@@ -169,8 +167,15 @@ p {text-align: center;
 #Services {padding-bottom: 100px;
 			padding-top: 100px;}
 
-footer {padding-top: 30px;
-		padding-bottom: 8px;}
+
+
+
+footer {background-color: lightcoral;
+		padding-top: 8px;
+		margin-bottom: -80px;
+		text-align: center
+		}
+
 
 
 .footericons {color: darkslatgrey;
