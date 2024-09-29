@@ -64,6 +64,7 @@
        url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
+
 /* montserrat-900 - latin */
 @font-face {
   font-family: 'Montserrat';
