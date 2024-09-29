@@ -83,6 +83,14 @@ html, body {
     width: 100%;
     overflow-x: hidden;}
 
+
+@media (max-width: 800px) {
+    #picture {
+        height: 50vh; /* Höhe auf 50% der Viewport-Höhe setzen */
+        object-fit: cover; /* Das Bild füllt den verfügbaren Platz */
+    }
+}
+
 html {
 	scroll-behavior: smooth;}
 
