@@ -79,6 +79,50 @@
        url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
+
+.navbar-toggler {
+    border: none; /* Entfernt den Rahmen */
+}
+
+.navbar-toggler:focus {
+    outline: none; /* Entfernt den Fokus-Rahmen */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-color: transparent; /* Hintergrund transparent */
+    width: 30px; /* Breite des Hamburger-Symbols */
+    height: 3px; /* Höhe der "Striche" */
+    position: relative;
+    display: block; /* Block-Element */
+}
+
+.navbar-toggler .navbar-toggler-icon:before,
+.navbar-toggler .navbar-toggler-icon:after {
+    content: '';
+    background-color: black; /* Farbe der "Striche" */
+    display: block;
+    height: 3px; /* Höhe der "Striche" */
+    width: 100%; /* Breite der "Striche" */
+    position: absolute; /* Positioniert die "Striche" */
+    left: 0; /* Links ausrichten */
+}
+
+.navbar-toggler .navbar-toggler-icon:before {
+    top: -8px; /* Abstand zwischen den "Strichen" */
+}
+
+.navbar-toggler .navbar-toggler-icon:after {
+    top: 8px; /* Abstand zwischen den "Strichen" */
+}
+
+/* Entfernt den Rahmen des Navbar-Togglers bei Fokus */
+.navbar-toggler:focus {
+    outline: none; /* Entfernt den Standard-Fokusrahmen */
+    box-shadow: none; /* Entfernt den Schatteneffekt */
+}
+
+
+
 html, body {
     width: 100%;
     overflow-x: hidden;}
@@ -86,10 +130,10 @@ html, body {
 
 @media (max-width: 800px) {
     #picture {
-        height: 50vh; /* Höhe auf 50% der Viewport-Höhe setzen */
-        object-fit: cover; /* Das Bild füllt den verfügbaren Platz */
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-position: left;}
     }
-}
 
 html {
 	scroll-behavior: smooth;}
