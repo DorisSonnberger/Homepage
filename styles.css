@@ -81,11 +81,14 @@
 
 html {scroll-behavior: smooth;}
 
-.header {background-image: url("../Angabe/img/header-bg.jpg");
-		 background-repeat:no-repeat;
-		 background-size: cover;
-		 background-position: center;
-		 padding-bottom: 400px;}
+.header {background-color: black;}
+
+.navbar-nav a {color: white;
+			   padding-right: 30px;}
+.navbar-nav a:hover {color: white;
+					transform: scale(1.1);
+					transition: 0.3s;}
+
 
 .bg-dark {background-color: rgba(0,0,0,0.00)var(--bs-bg-opacity) !important;}
 
