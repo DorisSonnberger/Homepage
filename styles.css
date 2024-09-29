@@ -79,7 +79,6 @@
        url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-/* CSS für Fade-In und Fade-Out */
 .fade-in {
     animation: fadeIn 1s forwards; /* 1 Sekunde für Fade-In */
 }
@@ -90,12 +89,9 @@
 
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Beginn mit 0% Sichtbarkeit */
-    }
+        opacity: 0;}
     to {
-        opacity: 1; /* Ende mit 100% Sichtbarkeit */
-    }
-}
+        opacity: 1;}}
 
 @keyframes fadeOut {
     from {
