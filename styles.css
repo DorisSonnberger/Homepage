@@ -1,172 +1,177 @@
-@charset "UTF-8";
-
-@media only screen and (max-width: 600px) {
-	header nav 	{
-		display: none;
-				}
-	}
-
-
-
-.poppins-thin {
-  font-family: "Poppins", system-ui;
-  font-weight: 100;
+/* merriweather-regular - latin */
+@font-face {
+  font-family: 'Merriweather';
   font-style: normal;
-}
-
-.poppins-extralight {
-  font-family: "Poppins", system-ui;
-  font-weight: 200;
-  font-style: normal;
-}
-
-.poppins-light {
-  font-family: "Poppins", system-ui;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.poppins-regular {
-  font-family: "Poppins", system-ui;
   font-weight: 400;
-  font-style: normal;
+  src: url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-regular.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
-
-.poppins-medium {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.poppins-semibold {
-  font-family: "Poppins", system-ui;
-  font-weight: 600;
-  font-style: normal;
-}
-
-.poppins-bold {
-  font-family: "Poppins", system-ui;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.poppins-extrabold {
-  font-family: "Poppins", system-ui;
-  font-weight: 800;
-  font-style: normal;
-}
-
-.poppins-black {
-  font-family: "Poppins", system-ui;
-  font-weight: 900;
-  font-style: normal;
-}
-
-.poppins-thin-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 100;
+/* merriweather-italic - latin */
+@font-face {
+  font-family: 'Merriweather';
   font-style: italic;
-}
-
-.poppins-extralight-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 200;
-  font-style: italic;
-}
-
-.poppins-light-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 300;
-  font-style: italic;
-}
-
-.poppins-regular-italic {
-  font-family: "Poppins", system-ui;
   font-weight: 400;
-  font-style: italic;
+  src: url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-italic.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-italic.woff') format('woff'), /* Modern Browsers */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../Angabe/fonts/merriweather-v30-latin/merriweather-v30-latin-italic.svg#Merriweather') format('svg'); /* Legacy iOS */
 }
 
-.poppins-medium-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 500;
-  font-style: italic;
+/* montserrat-200 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-200.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-200.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-200.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-200.woff') format('woff'), /* Modern Browsers */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-200.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-200.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
-
-.poppins-semibold-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 600;
-  font-style: italic;
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
-
-.poppins-bold-italic {
-  font-family: "Poppins", system-ui;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.poppins-extrabold-italic {
-  font-family: "Poppins", system-ui;
+/* montserrat-800 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 800;
-  font-style: italic;
+  src: url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../Angabe/fonts/montserrat-v25-latin/montserrat-v25-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-.poppins-black-italic {
-  font-family: "Poppins", system-ui;
+/* montserrat-900 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
   font-weight: 900;
-  font-style: italic;
+  src: url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
-
 
 html {scroll-behavior: smooth;}
 
-* {padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	}
+.header {background-image: url("../Angabe/img/header-bg.jpg");
+		 background-repeat:no-repeat;
+		 background-size: cover;
+		 background-position: center;
+		 padding-bottom: 400px;}
 
-body {
-	background-color: white;
-	color: black;
-	font-family: "Poppins", sans-serif;
-	}
+.bg-dark {background-color: rgba(0,0,0,0.00)var(--bs-bg-opacity) !important;}
 
-header a {
-	text-decoration: none;
-	}
 
-header {
-	padding: 20px;
-	background-color: black;
-	height: 50px;
-	display: flex;
-	justify-content: space-between;
-	}
+.btn {background-color: darkorange;
+	  color: beige;
+	  font-family: Montserrat;
+	  font-weight: 600;
+	  font-size: 30px;
+	  border-color: darkorange;}
+ 
+.btn:hover {background-color: beige;
+  			color: darkorange;
+  			border-color: darkorange}
 
-#logo {
-	display: flex;
-	align-items: center;
-	font-weight: bold;
-	}
+.header-text {text-align: center;}
 
-#logo a {
-	color: white
-	}
 
-ul {list-style:none;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	}
+header h2 {text-align: center;
+		   font-family: Montserrat;
+		   font-weight: 800;
+		   font-size: 80px;
+		   color: whitesmoke;
+		   padding-top: 10px;
+		   padding-bottom: 40px;}
 
-ul a {color: red;
-	}
+h2 {text-align: center;
+	padding-top: 40px;
+	padding-bottom: 10px;}
 
-ul li {padding: 5px;
-	margin-left: 10px;
-	}
+h3 {text-align: center;
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 60px;}
 
-ul li:hover {transform: scale(1.1);
-	transition: 0.3s;
-	}
+header h4 {text-align: center;
+		   font-family: Merriweather;
+		   font-style: italic;
+		   color: whitesmoke;
+		   padding-top: 300px;}
+
+p {text-align: center;
+   font-family: Merriweather;
+   font-style: italic;
+   font-weight: 400;
+   font-size: 16px;
+   padding-bottom: 30px;}
+
+#Portfolio {text-align: center;
+			background-color: lightslategray;
+			padding-bottom: 50px;
+			padding-top: 50px;
+			}
+
+.circle {text-align: center;
+		 color: white;
+		 scale: 280%;
+		 padding-bottom: 20px;
+		 padding-top: 20px;
+		 padding-left: 1px;
+		 }
+
+.fa-solid {border-radius: 50%;
+		   background-color: orange;
+		   height: 25px;
+		   width: 25px;
+		   padding-top: 4px;}
+
+
+.column {box-sizing: border-box !important;
+		 padding-bottom: 40px !important;
+		 paddding: 0px !important;
+		 margin: 10px !important;
+		 padding-right: 0px !important;
+		 padding-left: 0px !important;}
+
+
+#Services {padding-bottom: 100px;
+			padding-top: 100px;}
+
+footer {padding-top: 30px;
+		padding-bottom: 8px;}
+
+
+.footericons {color: darkslatgrey;
+			  text-align: center;
+			  scale: 150%;
+			  padding-top: 10px;}
 
