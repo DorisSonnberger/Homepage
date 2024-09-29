@@ -79,21 +79,40 @@
        url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-html {scroll-behavior: smooth;}
+html, body {
+    width: 100%;
+    overflow-x: hidden;}
 
-.header {background-color:white;
-		padding-top: 5px;
-		padding-bottom: 5px;
-		padding-right: 20px;
-		padding-left: 20px;}
+html {
+	scroll-behavior: smooth;}
 
-.navbar-nav a {color:black;
-			   margin-right: 5px;}
 
-.navbar-nav a:hover {color: black;
-					transform: scale(1.1);
-					transition: 0.3s;}
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;}
 
+footer .row {
+	width: 100%;
+    margin-left: 0; 
+    margin-right: 0;}
+
+
+
+.header {
+	background-color:white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	padding-left: 20px;}
+
+.navbar-nav a {
+	color:black;
+	margin-right: 5px;}
+
+.navbar-nav a:hover {
+	color: black;
+	transform: scale(1.1);
+	transition: 0.3s;}
 
 #picture {
 	background-image: url("Datein/kelly-sikkema-TtsKN6qSf9A-unsplash.jpg");
@@ -105,81 +124,96 @@ html {scroll-behavior: smooth;}
 .header-text {text-align: center;}
 
 
-header h2 {text-align: center;
-		   font-family: Montserrat;
-		   font-weight: 800;
-		   font-size: 80px;
-		   color: whitesmoke;
-		   padding-top: 10px;
-		   padding-bottom: 40px;}
+header h2 {
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 800;
+	font-size: 80px;
+	color: whitesmoke;
+	padding-top: 10px;
+	padding-bottom: 40px;}
 
-h2 {text-align: center;
+h2 {
+	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 10px;}
 
-h3 {text-align: center;
+h3 {
+	text-align: center;
 	font-family: Montserrat;
 	font-weight: 600;
 	font-size: 60px;}
 
-header h4 {text-align: center;
-		   font-family: Merriweather;
-		   font-style: italic;
-		   color: whitesmoke;
-		   padding-top: 300px;}
+header h4 {
+	text-align: center;
+	font-family: Merriweather;
+	font-style: italic;
+	color: whitesmoke;
+	padding-top: 300px;}
 
-p {text-align: center;
-   font-family: Montserrat;
-   font-style: normal;
-   font-weight: 400;
-   font-size: 16px;
-   padding-bottom: 30px;}
+p {
+	text-align: center;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	padding-bottom: 30px;}
 
-#Portfolio {text-align: center;
-			background-color: lightslategray;
-			padding-bottom: 50px;
-			padding-top: 50px;
-			}
+#Portfolio {
+	text-align: center;
+	background-color: lightslategray;
+	padding-bottom: 50px;
+	padding-top: 50px;}
 
-.circle {text-align: center;
-		 color: white;
-		 scale: 280%;
-		 padding-bottom: 20px;
-		 padding-top: 20px;
-		 padding-left: 1px;
-		 }
+.circle {
+	text-align: center;
+	color: white;
+	scale: 280%;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 1px;}
 
-.fa-solid {border-radius: 50%;
-		   background-color: orange;
-		   height: 25px;
-		   width: 25px;
-		   padding-top: 4px;}
-
-
-.column {box-sizing: border-box !important;
-		 padding-bottom: 40px !important;
-		 paddding: 0px !important;
-		 margin: 10px !important;
-		 padding-right: 0px !important;
-		 padding-left: 0px !important;}
+.fa-solid {
+	border-radius: 50%;
+	background-color: orange;
+	height: 25px;
+	width: 25px;
+	padding-top: 4px;}
 
 
-#Services {padding-bottom: 100px;
-			padding-top: 100px;}
+.column {
+	box-sizing: border-box !important;
+	padding-bottom: 40px !important;
+	paddding: 0px !important;
+	margin: 10px !important;
+	padding-right: 0px !important;
+	padding-left: 0px !important;}
 
 
-
-
-footer {background-color: lightcoral;
-		padding-top: 8px;
-		margin-bottom: -80px;
-		text-align: center
-		}
+#Services {
+	padding-bottom: 100px;
+	padding-top: 100px;}
 
 
 
-.footericons {color: darkslatgrey;
-			  text-align: center;
-			  scale: 150%;
-			  padding-top: 10px;}
 
+footer {
+    background-color: lightcoral;}
+
+footer .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;}
+
+footer .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 10px;}
+
+.footericons {
+    color: darkslategray;
+    text-align: center; 
+	scale: 150%;}
