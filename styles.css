@@ -79,94 +79,82 @@
        url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
+
+
+/*Fade in Animation bei Webiste*/
 .fade-in {
-    animation: fadeIn 1s forwards; /* 1 Sekunde für Fade-In */
-}
-
+    animation: fadeIn 1s forwards;}
 .fade-out {
-    animation: fadeOut 1s forwards; /* 1 Sekunde für Fade-Out */
-}
-
+    animation: fadeOut 1s forwards;}
 @keyframes fadeIn {
     from {
         opacity: 0;}
     to {
         opacity: 1;}}
-
 @keyframes fadeOut {
     from {
-        opacity: 1; /* Beginn mit 100% Sichtbarkeit */
+        opacity: 1;
     }
     to {
-        opacity: 0; /* Ende mit 0% Sichtbarkeit */
-    }
-}
+        opacity: 0;
+    }}
 
 
 
-
+/* Navbar Eigenschaften */
+/* Navbar Text */
 .navbar-nav a {
 	color:black;
 	margin-right: 5px;}
 
+/* Navbar Tex bei drüberhovern */
 .navbar-nav a:hover {
 	color:orange;
 	transform: scale(1);
 	transition: 0.3s;}
 
+/* weitere Navbar Eigenschaften, alle wichtig aber schwierig zu erklären :) */
 .navbar-collapse {
-    justify-content: flex-end; /* Richtet die Links am rechten Rand aus */
-}
+    justify-content: flex-end;}
 
 .navbar-nav {
-    display: flex; /* Setzt die Navbar-Elemente in eine Flexbox */
-    flex-direction: column; /* Stellt die Links untereinander auf */
-}
-
+    display: flex;
+    flex-direction: column;}
 
 .nav-link {
-    text-align: right; /* Text in den Links rechts ausrichten */
-    transition: none; /* Verhindert, dass sich die Größe oder der Abstand ändert */
-    padding: 10px 15px; /* Setzt festen Padding für Links */
-}
-
+    text-align: right;
+    transition: none;
+    padding: 10px 15px;}
 
 .navbar-toggler {
-    border: none; /* Entfernt den Rahmen */
-}
+    border: none;}
 
 .navbar-toggler .navbar-toggler-icon {
-    background-color: transparent; /* Hintergrund transparent */
-    width: 30px; /* Breite des Hamburger-Symbols */
-    height: 3px; /* Höhe der "Striche" */
+    background-color: transparent;
+    width: 30px;
+    height: 3px;
     position: relative;
-    display: block; /* Block-Element */
-}
+    display: block;}
 
 .navbar-toggler .navbar-toggler-icon:before,
 .navbar-toggler .navbar-toggler-icon:after {
     content: '';
-    background-color: black; /* Farbe der "Striche" */
+    background-color: black;
     display: block;
-    height: 3px; /* Höhe der "Striche" */
-    width: 100%; /* Breite der "Striche" */
-    position: absolute; /* Positioniert die "Striche" */
-    left: 0; /* Links ausrichten */
-}
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;}
 
 .navbar-toggler .navbar-toggler-icon:before {
-    top: -8px; /* Abstand zwischen den "Strichen" */
-}
+    top: -8px;}
 
 .navbar-toggler .navbar-toggler-icon:after {
-    top: 8px; /* Abstand zwischen den "Strichen" */
-}
+    top: 8px;}
 
-/* Entfernt den Rahmen des Navbar-Togglers bei Fokus */
 .navbar-toggler:focus {
-    outline: none; /* Entfernt den Standard-Fokusrahmen */
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3); /* Schattierung um den Toggler */
-}
+    outline: none; 
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);}
     
 
 
@@ -175,29 +163,10 @@ html, body {
     width: 100%;
     overflow-x: hidden;}
 
-
-@media (max-width: 800px) {
-    #picture {
-	background-repeat:no-repeat;
-	background-size:auto;
-	background-position: left;}
-    }
-
 html {
-	scroll-behavior: smooth;}
+    scroll-behavior: smooth;}
 
-
-.container-fluid {
-	padding-left: 0;
-	padding-right: 0;}
-
-footer .row {
-	width: 100%;
-    margin-left: 0; 
-    margin-right: 0;}
-
-
-
+/* Header Eigenschaften */
 .header {
 	background-color:white;
 	padding-top: 5px;
@@ -205,7 +174,60 @@ footer .row {
 	padding-right: 20px;
 	padding-left: 20px;}
 
+header h2 {
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 800;
+	font-size: 80px;
+	color: whitesmoke;
+	padding-top: 10px;
+	padding-bottom: 40px;} 
+.header-text {text-align: center;}
 
+header h4 {
+	text-align: center;
+	font-family: Merriweather;
+	font-style: italic;
+	color: whitesmoke;
+	padding-top: 300px;}
+
+
+@media (max-width: 800px) {
+    #picture {
+	background-repeat:no-repeat;
+	background-size:auto;
+	background-position: left;}}
+
+.container-fluid {
+	padding-left: 0;
+	padding-right: 0;}
+
+/* Footer Eigenschaften */
+footer {
+    background-color: lightcoral;}
+
+footer .row {
+	width: 100%;
+    margin-left: 0; 
+    margin-right: 0;}
+
+footer .row {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap;}
+
+footer .col-md-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    margin-bottom: 10px;}
+
+.footericons {
+    color: darkslategray;
+    text-align: center; 
+	scale: 150%;}
 
 #picture {
 	background-image: url("Datein/kelly-sikkema-TtsKN6qSf9A-unsplash.jpg");
@@ -215,20 +237,6 @@ footer .row {
 	padding-bottom: 800px;
 	margin-left: 0px;
 	display: block;}
-
-
-
-.header-text {text-align: center;}
-
-
-header h2 {
-	text-align: center;
-	font-family: Montserrat;
-	font-weight: 800;
-	font-size: 80px;
-	color: whitesmoke;
-	padding-top: 10px;
-	padding-bottom: 40px;}
 
 h2 {
 	text-align: center;
@@ -240,13 +248,6 @@ h3 {
 	font-family: Montserrat;
 	font-weight: 600;
 	font-size: 60px;}
-
-header h4 {
-	text-align: center;
-	font-family: Merriweather;
-	font-style: italic;
-	color: whitesmoke;
-	padding-top: 300px;}
 
 p {
 	text-align: center;
@@ -277,7 +278,6 @@ p {
 	width: 25px;
 	padding-top: 4px;}
 
-
 .column {
 	box-sizing: border-box !important;
 	padding-bottom: 40px !important;
@@ -286,31 +286,6 @@ p {
 	padding-right: 0px !important;
 	padding-left: 0px !important;}
 
-
 #Services {
 	padding-bottom: 100px;
 	padding-top: 100px;}
-
-
-
-
-footer {
-    background-color: lightcoral;}
-
-footer .row {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap;}
-
-footer .col-md-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    text-align: center; 
-    margin-bottom: 10px;}
-
-.footericons {
-    color: darkslategray;
-    text-align: center; 
-	scale: 150%;}
