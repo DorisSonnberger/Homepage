@@ -79,7 +79,8 @@
        url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
-
+html {
+    scroll-behavior: smooth;}
 
 /*Fade in Animation bei Webiste*/
 .fade-in {
@@ -316,3 +317,29 @@ p {
 	padding-bottom: 100px;
 	padding-top: 100px;}
 
+
+
+    
+
+#ScrollSection {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;}
+    
+#ScrollSection h2 {
+    cursor: pointer;}
+
+
+#ScrollSection {
+        background-color: white;
+        color: black;}
+
+#ScrollSection a:hover {
+    color:orange;
+	transform: scale(1);
+	transition: 0.3s;}
+
+    #ScrollSection h2 a {
+        color: black; /* Set the text color to black */
+        text-decoration: none; /* Underline the links */
+        font-weight: normal; /* Optional: Make the text bold */
