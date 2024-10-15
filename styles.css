@@ -345,50 +345,8 @@ p {
         text-decoration: none;
         font-weight: normal;}
 
- /* Große Karte: Bild links, Text rechts */
-.large-card {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    max-width: 900px;
-    margin-bottom: 40px;
-    background-color: white;
-    border-radius: 8px;
-    overflow: hidden;
-}
+ 
 
-.large-card .card {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    padding: 20px;
-}
-
-.large-card .portrait {
-    width: 300px;
-    margin-right: 20px;
-}
-
-.large-card .details {
-    flex: 1;
-    padding: 20px;
-}
-
-/* Neue mittlere Karte */
-.middle-card {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.middle-card .card {
-    background-color: white;
-    width: 300px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
 
 .portrait img {
     width: 100%;
@@ -420,14 +378,16 @@ p {
     width: 100%;
 }
 
+.doctor {box-shadow: 0 4px 8px rgba(199, 149, 21, 0.1);}
+
 .card {
     background-color: white;
     width: 300px;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
+    overflow: hidden;}
+
 
 /* Responsive Design für Mobilgeräte */
 @media (max-width: 768px) {
@@ -447,6 +407,6 @@ p {
     }
 
     .card {
-        width: 100%;
+        width: 75%;
     }
 }
