@@ -393,12 +393,16 @@ p {
     flex: 1;
     margin: 10px;
     min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert den Inhalt der Spalte */
 }
 
 .footer-column h4 {
     font-size: 1.2em;
     margin-bottom: 15px;
     color: #333;
+    text-align: center;
 }
 
 .footer-column p, .footer-column li {
@@ -422,6 +426,39 @@ p {
     padding-left: 20px;
 }
 
+.opening-hours {
+    border-spacing: 10px 5px;
+    margin: 0 auto; /* Zentriert die Tabelle horizontal */
+}
+
+.opening-hours td {
+    font-size: 0.9em;
+    color: #666;
+    padding: 5px;
+}
+
+/* Kontakt Tabelle Styling */
+.contact-table {
+    width: 100%; /* Nutzt die volle Breite der Spalte */
+    border-spacing: 10px 5px; /* Platz zwischen den Zellen */
+}
+
+.contact-table td {
+    font-size: 0.9em;
+    color: #666;
+    padding: 5px;
+}
+
+.contact-table a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-table a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Anpassungen */
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
@@ -430,5 +467,34 @@ p {
 
     .footer-column {
         margin-bottom: 20px;
+        align-items: flex-start; /* Links ausrichten auf kleinen Bildschirmen */
+    }
+
+    .footer-column h4 {
+        text-align: center; /* Mittig zentriert */
+        padding: 0;         /* Kein Padding auf mobilen Geräten */
+        margin: 0 0 15px 0; /* Keine extra Ränder */
+    }
+
+    .footer-column p, .footer-column ul {
+        text-align: left; /* Links ausgerichtet auf mobilen Geräten */
+    }
+
+    .opening-hours {
+        margin: 0; /* Öffnungszeiten Tabelle linksbündig */
+    }
+
+    .opening-hours td {
+        text-align: left; /* Links ausgerichtete Öffnungszeiten */
+    }
+
+    /* Links ausgerichtete Kontakt-Spalte */
+    .contact-table {
+        text-align: left; /* Links ausgerichtet */
+    }
+
+    .contact-table td {
+        text-align: left; /* Links ausgerichteter Text */
     }
 }
+
