@@ -380,7 +380,7 @@ p {
 
 /* Footer Styling */
 .footer {
-    background-color: #f4f4f4;
+    background-color: white;
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
