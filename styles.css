@@ -575,3 +575,69 @@ p {
     }
 }
 
+
+––––––––––––––––––––––––––––
+/* Allgemeine Layout-Einstellungen */
+#Kontakt {
+    padding: 50px 0;
+}
+
+.carousel-section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+.carousel-container {
+    width: 100%; /* Macht die Galerie so breit wie die anderen Sektionen */
+    margin: 0 auto;
+}
+/* Kontaktinformationen */
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+}
+
+/* Was mitzubringen ist */
+.what-to-bring {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center; /* Zentriert den Text in der gesamten Sektion */
+}
+
+.what-to-bring h2 {
+    margin-bottom: 15px;
+}
+
+.what-to-bring ul {
+    list-style-type: none; /* Entfernt die Standard-Aufzählungspunkte */
+    padding-left: 0; /* Entfernt linken Abstand */
+}
+
+.what-to-bring li {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Abstand zwischen Punkt und Text */
+}
+
+.what-to-bring li::before {
+    content: '•'; /* Fügt einen Aufzählungspunkt hinzu */
+    font-size: 1.5em;
+    color: #333; /* Farbe des Punktes */
+}
+
