@@ -582,16 +582,19 @@ p {
     padding: 50px 0;
 }
 
+/* Galerie-Sektion */
 .carousel-section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
     margin-top: 40px;
     border-radius: 8px;
 }
+
 .carousel-container {
     width: 100%; /* Macht die Galerie so breit wie die anderen Sektionen */
     margin: 0 auto;
 }
+
 /* Kontaktinformationen */
 .contact-info {
     background-color: #f9f9f9;
@@ -614,16 +617,19 @@ p {
     background-color: #f1f1f1;
     padding: 20px;
     border-radius: 8px;
-    text-align: center; /* Zentriert den Text in der gesamten Sektion */
+    text-align: center;
 }
 
 .what-to-bring h2 {
     margin-bottom: 15px;
+    font-size: 1.5em; /* Größerer Titeltext für Lesbarkeit */
 }
 
 .what-to-bring ul {
     list-style-type: none; /* Entfernt die Standard-Aufzählungspunkte */
-    padding-left: 0; /* Entfernt linken Abstand */
+    padding-left: 0;
+    margin: 0 auto; /* Zentriert die Liste innerhalb der Sektion */
+    max-width: 90%; /* Begrenzte Breite für bessere Lesbarkeit auf mobilen Geräten */
 }
 
 .what-to-bring li {
@@ -639,5 +645,37 @@ p {
     content: '•'; /* Fügt einen Aufzählungspunkt hinzu */
     font-size: 1.5em;
     color: #333; /* Farbe des Punktes */
+}
+
+/* Mobile Anpassungen */
+@media (max-width: 768px) {
+    #Kontakt {
+        padding: 30px 0;
+    }
+
+    .carousel-section {
+        margin-bottom: 30px;
+    }
+
+    .contact-info {
+        padding: 15px;
+        font-size: 1em; /* Kleinere Schrift für bessere Lesbarkeit */
+    }
+
+    .what-to-bring {
+        padding: 15px;
+    }
+
+    .what-to-bring h2 {
+        font-size: 1.3em; /* Kleinere Schriftgröße für den Titel */
+    }
+
+    .what-to-bring li {
+        font-size: 1em; /* Kleinere Schriftgröße für die Listenpunkte */
+    }
+
+    .what-to-bring li::before {
+        font-size: 1.2em; /* Kleinere Aufzählungspunkte */
+    }
 }
 
