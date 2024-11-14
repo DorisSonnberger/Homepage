@@ -244,24 +244,50 @@ align-items: center;}
 	display: block;}
 
 h2 {
-	text-align: center;
-	padding-top: 40px;
-	padding-bottom: 10px;}
-
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
 h3 {
-	text-align: center;
-	font-family: Montserrat;
-	font-weight: 600;
-	font-size: 60px;}
-
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 60px;
+    }
+    
+.leistungen-tabelle {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    
+.leistungen-tabelle thead {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+.leistungen-tabelle th, .leistungen-tabelle td {
+        padding: 12px;
+        text-align: left;
+        border: 1px solid #ddd;
+    }
+    
+.leistungen-tabelle tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    
+.leistungen-tabelle tbody tr:hover {
+        background-color: #e0f7fa;
+    }
+    
 p {
-	text-align: center;
-	font-family: Montserrat;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	padding-bottom: 30px;}
-
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        color: #666;
+        padding-top: 20px;
+    }
 #Portfolio {
 	text-align: center;
 	background-color: lightslategray;
@@ -345,13 +371,52 @@ p {
 
 .doctor {box-shadow: 0 4px 8px rgba(199, 149, 21, 0.1);}
 
+.leistungen-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px; /* Mehr Platz zwischen den Karten */
+}
+
+#Leistungen {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+/* Responsive Design: Anpassung für mobile Geräte */
+@media (max-width: 768px) {
+    .leistungen-cards {
+        justify-content: center; /* Zentriert die Karten auf mobilen Geräten */
+    }
+    
+    .card {
+        width: 100%; /* Karten nehmen die volle Breite auf mobilen Geräten ein */
+        max-width: 500px; /* Optional: Setze eine maximale Breite für die Karten */
+    }
+}
+
 .card {
-    background-color: white;
-    width: 300px;
-    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 8px;
+    width: 45%; /* Breitere Karten für mehr Platz */
+    padding: 40px 20px; /* Mehr "Headspace" oben und unten */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;}
+    transition: transform 0.3s ease;
+    margin-bottom: 30px; /* Mehr Abstand nach unten */
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.details {
+    text-align: center;
+}
+
+.dauer {margin-top: 20px; /* Mehr Abstand zum restlichen Text */
+            font-weight: bold;
+            color: #4CAF50;}
 
 /* Responsive Design für Mobilgeräte */
 @media (max-width: 768px) {
@@ -386,7 +451,7 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    border-top: 1px solid #ccc;
+    border-top: 0.5px solid #ccc;
 }
 
 .footer-column {
@@ -407,7 +472,7 @@ p {
 
 .footer-column p, .footer-column li {
     font-size: 0.9em;
-    color: #666;
+    color: black;
     margin: 5px 0;
 }
 
@@ -433,7 +498,7 @@ p {
 
 .opening-hours td {
     font-size: 0.9em;
-    color: #666;
+    color: black;
     padding: 5px;
 }
 
@@ -445,7 +510,7 @@ p {
 
 .contact-table td {
     font-size: 0.9em;
-    color: #666;
+    color: black;
     padding: 5px;
 }
 
