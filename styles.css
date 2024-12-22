@@ -79,6 +79,8 @@
        url('../Abgabe/fonts/montserrat-v25-latin/montserrat-v25-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
 
+
+
 html {
     scroll-behavior: smooth;}
 
@@ -101,11 +103,7 @@ html {
     }}
 
 
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
 
 
 /* Navbar Eigenschaften */
@@ -405,6 +403,7 @@ p {
     padding-bottom: 80px;
 }
 
+
 /* Responsive Design: Anpassung für mobile Geräte */
 @media (max-width: 768px) {
     .leistungen-cards {
@@ -428,7 +427,7 @@ p {
 
 .card h3 {
     font-size: 18px;
-}
+    margin-bottom: -6px;}
 
 .card:hover {
     transform: translateY(-10px);
@@ -611,7 +610,7 @@ p {
 }
 
 .contact-info h2 {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .contact-info p {
@@ -620,7 +619,7 @@ p {
 
 /* Was mitzubringen ist */
 .what-to-bring {
-    background-color: #f1f1f1;
+    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -687,38 +686,193 @@ p {
         font-size: 1.2em; /* Kleinere Aufzählungspunkte */
     }
 }
-
+/* Box für Terminvereinbarung */
 .appointment-box {
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid #4caf50;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
     max-width: 400px;
+    width: 100%;
+}
+
+/* Überschrift */
+.appointment-box h2 {
+    color: #4caf50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Beschreibungstext */
+.appointment-box p {
+    color: #555555;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.appointment-box button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover-Effekt für Button */
+.appointment-box button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* Allgemeines Box-Design */
+.box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
-.appointment-box h2 {
+/* Willkommensabschnitt */
+#welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.welcome-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.text-box {
+    flex: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 36px;
     color: #4caf50;
     margin-bottom: 15px;
 }
 
-.appointment-box p {
+.text-box p {
+    font-size: 18px;
     color: #555;
-    margin-bottom: 20px;
 }
 
-.appointment-box button {
+.image-box {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* Kontaktbereich mit Boxen */
+#contact-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+#contact-section .box {
+    flex: 1;
+}
+
+#contact-section h3 {
+    color: #4caf50;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+#contact-section ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+#contact-section li {
+    margin: 5px 0;
+}
+
+#contact-section button {
     background-color: #4caf50;
-    color: white;
+    color: #fff;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
-.appointment-box button:hover {
+#contact-section button:hover {
     background-color: #45a049;
+}
+
+/* Wahlarzt-Info */
+#wahlarzt-section h2 {
+    font-size: 28px;
+    color: #4caf50;
+    margin-bottom: 15px;
+}
+
+#wahlarzt-section p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsivität */
+@media (max-width: 768px) {
+    #contact-section {
+        flex-direction: column;
+    }
+
+    #contact-section .box {
+        max-width: 100%;
+    }
+
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .text-box,
+    .image-box {
+        flex: none;
+        width: 100%;
+    }
+
+    .welcome-image {
+        max-width: 100%;
+    }
 }

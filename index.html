@@ -37,50 +37,46 @@
 
 <body>
 <!-- dafür da, dass die Fade in Animation läuft -->
-<div class="content fade-in">	
-
-<!-- Navbar -->
-<!-- PASST SOWEIT -->
-<header>
-
-	<!-- Navbar sollte soweit eigentlich laufen und funktionieren -->
-	<div class="header">
-		
-		<!-- Anfang Navbar-->
-		<nav class="navbar navbar-expand-md">
-		  <div class="container-fluid">
-
-			<a class="navbar-brand" href="index.html"> 
-				<img src="Datein/Bilder/Logo/sonnberger logo.png" alt="Logo" width="50px">
-			</a>
-
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-
-				<ul class="navbar-nav ml-auto ">
-					<li class="nav-item">
-					  <a class="nav-link" href="index.html">Startseite</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="leistungen.html">Leistungen</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="team.html">Team</a>
-					</li>
-					<li class="nav-item">
-					  <a class="nav-link" href="kontakt.html">Kontakt</a>
-					</li> 
-				</ul>
-
-			</div>
-		  </div>
-		</nav>
-		<!-- Ende Navbar-->
-	</div>
-</header>
+<div class="content fade-in">
+	<header>
+		<div class="header">
+			
+	<!-- Anfang Navbar-->
+	<nav class="navbar navbar-expand-md">
+	  <div class="container-fluid">
+	
+		<a class="navbar-brand" href="index.html"> 
+			<img src="Datein/Bilder/Logo/sonnberger logo.png" alt="Logo" width="50px">
+		</a>
+		  
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+		  
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			
+			<ul class="navbar-nav ml-auto ">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html">Startseite</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="leistungen.html">Leistungen</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="team.html">Team</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="kontakt.html">Kontakt</a>
+				</li> 
+			 </ul>
+			
+		</div>
+	  </div>
+	</nav>
+	<!-- Ende Navbar-->
+			
+		</div>
+	</header>
 
 
 <!-- BEI DEN HINWEISEN DIE Ps NOCH DIE RICHTIGE SCHRIFTART -->
@@ -124,12 +120,9 @@
 -->
 
 <!-- Bildergalerie -->
-<!-- BILDER MÜSSEN AUSGETAUSCHT WERDEN BZW ANGEPASST WERDEN -->
+<!-- BILDER MÜSSEN AUSGETAUSCHT WERDEN BZW ANGEPASST WERDEN
 <section id="Bilder" class="scroll-target container-fluid">
-	<!-- Bildergalerie -->
 	<section id="gallery-section" class="container-fluid">
-  
-	  <!-- Wrapper to control width -->
 	  <div class="carousel-container" style="width: 100%; margin: 0 auto;"> 
 		<div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
 		  <div class="carousel-inner">
@@ -144,7 +137,6 @@
 			</div>
 		  </div>
   
-		  <!-- Controls (for manual switching) -->
 		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 			<span class="visually-hidden">Previous</span>
@@ -157,26 +149,60 @@
 	  </div>
 	</section>
   </section>
-
+-->
  
-<!-- Starke Beschreibung -->
-<section id="Headliner">
 
+
+
+
+<!-- Willkommensabschnitt -->
+<section id="welcome">
+	<div class="welcome-content">
+		<div class="text-box">
+			<h1>Willkommen bei Frau Dr. Doris Sonnberger</h1>
+			<p>Wir sind Ihre vertrauensvolle Ansprechpartnerin für die Gesundheit Ihres Kindes. Mit viel Erfahrung und Einfühlungsvermögen begleiten wir Sie und Ihre Familie.</p>
+		</div>
+		<div class="image-box">
+			<img src="Datein/Bilder/Logo/sonnberger logo.jpg" alt="Willkommen Bild" class="welcome-image">
+		</div>
+	</div>
+</section>
+
+<!-- Boxen: Öffnungszeiten und Anruf -->
+<section id="contact-section">
+	<div class="box">
+		<h3>Öffnungszeiten</h3>
+		<ul>
+			<li>Montag: 08:00 - 13:00</li>
+			<li>Dienstag: 11:00 - 15:30</li>
+			<li>Mittwoch: 08:00 - 13:00</li>
+			<li>Donnerstag: 08:00 - 13:00</li>
+			<li>Freitag: 08:00 - 13:00</li>
+			<li>Samstag: geschlossen</li>
+			<li>Sonntag: geschlossen</li>
+		</ul>
+	</div>
+</section>
+
+<section id="contact-section">
+	<div class="box">
+		<h3>Terminvereinbarung</h3>
+		<p>Rufen Sie uns an, um Ihren Termin zu planen. Wir freuen uns, Sie und Ihr Kind begrüßen zu dürfen.</p>
+		<button onclick="window.location.href='tel:+43732712141';">Jetzt anrufen</button>
+	</div>
+</section>
+
+<!-- Was bedeutet Wahlarzt -->
+<section id="wahlarzt-section">
+	<div class="box">
+		<h2>Was bedeutet Wahlarzt?</h2>
+		<p>Als Wahlarztpraxis bieten wir Ihnen und Ihrem Kind individuelle Betreuung ohne lange Wartezeiten. Sie erhalten eine detaillierte Rechnung, die Sie bei Ihrer Krankenkasse einreichen können, um einen Teil der Kosten zurückerstattet zu bekommen.</p>
+	</div>
 </section>
 
 
 
-<section id="Öffnungszeiten" class="container-fluid"> 
-	<pre class="tabbed">
-	Montag:		08:00 - 13:00 Uhr
-	Dienstag	11:00 - 15:30 Uhr
-	Mittwoch:	08:00 - 13:00 Uhr
-	Donnerstag:	08:00 - 13:00 Uhr
-	Freitag:	08:00 - 13:00 Uhr
-  Samstag:	  geschlossen
-  Sonntag:	  geschlossen
-	</pre>
-</section>
+
 
 <!--footer -->
 <footer class="footer">
