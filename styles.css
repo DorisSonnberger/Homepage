@@ -114,7 +114,7 @@ html {
 
 /* Navbar Tex bei drüberhovern */
 .navbar-nav a:hover {
-	color:#4caf50;
+	color:#3d8e3f;
 	transform: scale(1);
 	transition: 0.3s;}
 
@@ -197,7 +197,7 @@ header h4 {
 	padding-top: 300px;}
 
 #HinweisKrass {
-    background-color: #4caf50;
+    background-color: #3d8e3f;
     padding-bottom: 30px;
     padding-top: 85px;}
 
@@ -221,7 +221,7 @@ header h4 {
     background-color: white;
     padding-top: 85px;
     padding-bottom: 30px;
-    color: #4caf50;
+    color: #3d8e3f;
     text-align: center;
 	font-family:Sleep‚‚‚‚montserrat;
 	font-style: normal;;}
@@ -308,7 +308,7 @@ p {
 
 .fa-solid {
 	border-radius: 50%;
-	background-color: #4caf50;
+	background-color: #3d8e3f;
 	height: 25px;
 	width: 25px;
 	padding-top: 4px;}
@@ -339,7 +339,7 @@ p {
         color: black;}
 
 #ScrollSection a:hover {
-    color:#4caf50;
+    color:#3d8e3f;
 	transform: scale(1);
 	transition: 0.3s;}
 
@@ -462,7 +462,7 @@ p {
 
 /* Footer Styling */
 .footer {
-    background-color: white;
+    background-color: #3d8e3f;
     padding: 30px 20px;
     display: flex;
     justify-content: space-between;
@@ -483,13 +483,13 @@ p {
 .footer-column h4 {
     font-size: 1.2em;
     margin-bottom: 15px;
-    color: #333;
+    color: #fff;
     text-align: center;
 }
 
 .footer-column p, .footer-column li {
     font-size: 0.9em;
-    color: black;
+    color: #fff;
     margin: 5px 0;
 }
 
@@ -504,6 +504,7 @@ p {
 }
 
 .footer-column ul {
+    color: #fff;
     list-style-type:none;
     padding-left: 20px;
 }
@@ -511,6 +512,12 @@ p {
 .opening-hours {
     border-spacing: 10px 5px;
     margin: 0 auto; /* Zentriert die Tabelle horizontal */
+}
+
+.opening-hours-footer td {
+    font-size: 0.9em;
+    color: #fff;
+    padding: 5px;
 }
 
 .opening-hours td {
@@ -526,13 +533,14 @@ p {
 }
 
 .contact-table td {
+    padding-left: 30px;
     font-size: 0.9em;
-    color: black;
+    color: #fff;
     padding: 5px;
 }
 
 .contact-table a {
-    color: #007bff;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -619,7 +627,7 @@ p {
 
 /* Was mitzubringen ist */
 .what-to-bring {
-    background-color: #f9f9f9;
+    background-color: #3d8e3f;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
@@ -627,7 +635,9 @@ p {
 }
 
 .what-to-bring h2 {
-    margin-bottom: 15px;}
+    margin-top: -30px;
+    margin-bottom: 15px;
+    color: #fff;}
 
 .what-to-bring ul {
     list-style-type: none ; /* Entfernt die Standard-Aufzählungspunkte */
@@ -637,6 +647,7 @@ p {
 }
 
 .what-to-bring li {
+    color: #fff;
     font-size: 1.1em;
     margin-bottom: 8px;
     display: flex;
@@ -699,7 +710,7 @@ p {
     margin-right: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-color: #4caf50;
+    background-color: #3d8e3f;
 }
 
 #contact-box {
@@ -707,7 +718,7 @@ p {
     justify-content: center;
     gap: px;
     margin-top: -20px;
-    padding-bottom: 60px;
+    padding-top: 40px;
 }
 
 
@@ -733,7 +744,7 @@ p {
 
 #contact-box button {
     background-color:#fff;
-    color: #4caf50;
+    color: #3d8e3f;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -744,7 +755,7 @@ p {
 }
 
 #contact-box button:hover {
-    background-color: #5ac75e;
+    background-color: #4ea94f;
     color: #fff;
 }
 
@@ -816,7 +827,7 @@ p {
 
 .text-box h1 {
     font-size: 36px;
-    color: #4caf50;
+    color: #3d8e3f;
     margin-bottom: 15px;
 }
 
@@ -852,7 +863,7 @@ p {
 }
 
 #contact-section h3 {
-    color: #4caf50;
+    color: #3d8e3f;
     margin-bottom: 15px;
     font-size: 30px;
 }
@@ -868,7 +879,7 @@ p {
 }
 
 #contact-section button {
-    background-color: #4caf50;
+    background-color: #3d8e3f;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -880,13 +891,13 @@ p {
 }
 
 #contact-section button:hover {
-    background-color: #45a049;
+    background-color: #3d8e3f;
 }
 
 /* Wahlarzt-Info */
 #wahlarzt-section h2 {
     font-size: 28px;
-    color: #4caf50;
+    color: #3d8e3f;
     margin-bottom: 15px;
 }
 
