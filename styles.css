@@ -751,8 +751,8 @@ p {
 /* Responsivität für mobile Geräte */
 @media (max-width: 768px) {
     .contact-box {
-        margin-right: 100px; /* Abstand zu den Seitenrändern */
-        margin-left: 100px;
+        margin-right: 80px; /* Abstand zu den Seitenrändern */
+        margin-left: 80px;
         padding: 15px; /* Weniger Padding auf kleineren Bildschirmen */
     }
 
