@@ -114,7 +114,7 @@ html {
 
 /* Navbar Tex bei drüberhovern */
 .navbar-nav a:hover {
-	color:orange;
+	color:#4caf50;
 	transform: scale(1);
 	transition: 0.3s;}
 
@@ -197,7 +197,7 @@ header h4 {
 	padding-top: 300px;}
 
 #HinweisKrass {
-    background-color: orange;
+    background-color: #4caf50;
     padding-bottom: 30px;
     padding-top: 85px;}
 
@@ -221,7 +221,7 @@ header h4 {
     background-color: white;
     padding-top: 85px;
     padding-bottom: 30px;
-    color: orange;
+    color: #4caf50;
     text-align: center;
 	font-family:Sleep‚‚‚‚montserrat;
 	font-style: normal;;}
@@ -308,7 +308,7 @@ p {
 
 .fa-solid {
 	border-radius: 50%;
-	background-color: orange;
+	background-color: #4caf50;
 	height: 25px;
 	width: 25px;
 	padding-top: 4px;}
@@ -339,7 +339,7 @@ p {
         color: black;}
 
 #ScrollSection a:hover {
-    color:orange;
+    color:#4caf50;
 	transform: scale(1);
 	transition: 0.3s;}
 
@@ -686,50 +686,84 @@ p {
         font-size: 1.2em; /* Kleinere Aufzählungspunkte */
     }
 }
-/* Box für Terminvereinbarung */
-.appointment-box {
-    background-color: #ffffff;
-    border: 2px solid #4caf50;
+
+
+.contact-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    padding-right: 295px;
+    padding-left: 295px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 400px;
-    width: 100%;
-}
-
-/* Überschrift */
-.appointment-box h2 {
-    color: #4caf50;
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-/* Beschreibungstext */
-.appointment-box p {
-    color: #555555;
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-
-/* Button */
-.appointment-box button {
     background-color: #4caf50;
-    color: #ffffff;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    gap: px;
+    margin-top: -20px;
+    padding-bottom: 60px;
+}
+
+
+#contact-box h3 {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+#contact-box p {
+    color: #fff;
+}
+
+#contact-box ul {
+    list-style: none;
+    padding: 0;
+    color: #555;
+}
+
+#contact-box li {
+    margin: 5px 0;
+}
+
+#contact-box button {
+    background-color:#fff;
+    color: #4caf50;
     border: none;
-    padding: 12px 20px;
+    padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
-/* Hover-Effekt für Button */
-.appointment-box button:hover {
-    background-color: #45a049;
+#contact-box button:hover {
+    background-color: #5ac75e;
+    color: #fff;
 }
 
+/* Responsivität für mobile Geräte */
+@media (max-width: 768px) {
+    .contact-box {
+        margin-right: 100px; /* Abstand zu den Seitenrändern */
+        margin-left: 100px;
+        padding: 15px; /* Weniger Padding auf kleineren Bildschirmen */
+    }
 
+    #contact-box h3 {
+        font-size: 24px; /* Kleinere Schriftgröße für Überschrift */
+    }
+
+    #contact-box button {
+        font-size: 14px; /* Kleinere Schriftgröße für Button */
+    }
+}
 
 
 /* Allgemeines Box-Design */
@@ -756,9 +790,18 @@ p {
 .welcome-content {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 00px;
     align-items: center;
-    max-width: 1000px;
+    max-width: 1500px;
+}
+
+.welcome-image {
+    width: 100%;
+    max-width: 400px; /* Maximale Breite */
+    aspect-ratio: 1/1; /* Seitenverhältnis 4:3 */
+    object-fit: fill; /* Bild skalieren, ohne das Seitenverhältnis zu verlieren */
+    border-radius: 10px; /* Abgerundete Ecken */
+    padding-top: 20px;
 }
 
 .text-box {
@@ -766,7 +809,7 @@ p {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 40px;
+    padding: 38.75px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
