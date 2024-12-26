@@ -759,8 +759,8 @@ p {
     color: #fff;
 }
 
-/* Responsivität für mobile Geräte */
-@media (max-width: 768px) {
+/* Responsivität für mobile Geräte und Tablets */
+@media (max-width: 1024px) {
     .contact-box {
         margin-right: 60px; /* Abstand zu den Seitenrändern */
         margin-left: 60px;
@@ -773,6 +773,23 @@ p {
 
     #contact-box button {
         font-size: 14px; /* Kleinere Schriftgröße für Button */
+    }
+}
+
+/* Spezifische Anpassungen für Smartphones */
+@media (max-width: 768px) {
+    .contact-box {
+        margin-right: 60px; /* Weniger Abstand zu den Seitenrändern */
+        margin-left: 60px;
+        padding: 15px; /* Noch weniger Padding auf sehr kleinen Bildschirmen */
+    }
+
+    #contact-box h3 {
+        font-size: 24px; /* Noch kleinere Schriftgröße für Überschrift */
+    }
+
+    #contact-box button {
+        font-size: 14px; /* Noch kleinere Schriftgröße für Button */
     }
 }
 
