@@ -962,7 +962,7 @@ p {
 
 /* Spezifische Anpassungen für Smartphones */
 @media (max-width: 768px) {
-    .contact-box {
+    .legal-box {
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 10px;
@@ -971,14 +971,6 @@ p {
         margin-right: 50px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
-    }
-
-    #contact-box h3 {
-        font-size: 24px; /* Noch kleinere Schriftgröße für Überschrift */
-    }
-
-    #contact-box button {
-        font-size: 14px; /* Noch kleinere Schriftgröße für Button */
     }
 }
 
