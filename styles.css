@@ -960,7 +960,6 @@ p {
     text-align: center;
 }
 
-/* Spezifische Anpassungen für Smartphones */
 @media (max-width: 768px) {
     .legal-box {
         background-color: #fff;
@@ -974,10 +973,14 @@ p {
     }
 }
 
+#legal-section {
+    padding-bottom: 15px;
+}
+
 #legal-section h1 {
     font-size: 38px;
     color: #3d8e3f;
-    margin-bottom: 15px;
+    margin-bottom: -15px;
 }
 
 #legal-section h2 {
