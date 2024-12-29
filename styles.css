@@ -552,12 +552,16 @@ p {
 @media (max-width: 768px) {
     .footer {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-column {
         margin-bottom: 20px;
         align-items: flex-start; /* Links ausrichten auf kleinen Bildschirmen */
+    }
+
+    .footer-column ul {
+        margin-left: -15px;
     }
 
     .footer-column h4 {
