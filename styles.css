@@ -159,17 +159,9 @@ html {
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);}
     
     @media (prefers-color-scheme: dark) {
-        .navbar {
-            background-color: black !important;
-        }
-    
-        .navbar-nav a {
-            color: white;
-        }
-    
         .navbar-toggler .navbar-toggler-icon:before,
         .navbar-toggler .navbar-toggler-icon:after {
-            background-color: white;
+            background-color: #4ea64f;
         }
     }
 
@@ -184,7 +176,7 @@ html {
     
         .navbar-toggler .navbar-toggler-icon:before,
         .navbar-toggler .navbar-toggler-icon:after {
-            background-color: black;
+            background-color: #3d8e3f ;
         }
     }
 
