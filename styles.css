@@ -159,13 +159,17 @@ html {
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);}
     
 /* Dark Mode Styles */
+body.dark-mode .navbar {
+    background-color: white !important;
+}
+
 body.dark-mode .navbar-nav a {
-    color: white;
+    color: black;
 }
 
 body.dark-mode .navbar-toggler .navbar-toggler-icon:before,
 body.dark-mode .navbar-toggler .navbar-toggler-icon:after {
-    background-color: white;
+    background-color: black;
 }
 
 
