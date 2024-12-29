@@ -158,21 +158,14 @@ html {
     outline: none; 
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);}
     
-    @media (prefers-color-scheme: dark) {
-        .navbar {
-            background-color: white !important;
-        }
-    
-        .navbar-nav a {
-            color: black;
-        }
+ @media (prefers-color-scheme: dark) {
         .navbar-toggler .navbar-toggler-icon:before,
         .navbar-toggler .navbar-toggler-icon:after {
             background-color: #4ea64f;
         }
     }
 
-    @media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: light) {
         .navbar {
             background-color: white !important;
         }
@@ -210,8 +203,10 @@ header h2 {
 	font-size: 80px;
 	color: whitesmoke;
 	padding-top: 10px;
-	padding-bottom: 40px;} 
-.header-text {text-align: center;}
+	padding-bottom: 40px;}
+
+.header-text {
+    text-align: center;}
 
 header h4 {
 	text-align: center;
@@ -221,25 +216,82 @@ header h4 {
 	padding-top: 300px;}
 
 #HinweisKrass {
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
     background-color: #3d8e3f;
-    padding-bottom: 30px;
-    padding-top: 85px;}
+    margin-bottom: 20px;}
 
-#HinweisKrass h1 {text-align: center;}
+#HinweisKrass h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: -10px;}
+
+#HinweisKrass p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: -3px;}
 
 #HinweisUrlaub {
-    background-color: azure;
-    padding-bottom: 30px;
-    padding-top: 85px;}
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 20px;}
 
-#HinweisUrlaub h1 {text-align: center;}
+#HinweisUrlaub h1 {
+    text-align: center;
+    margin-bottom: -10px;}
+
+#HinweisUrlaub p {
+    margin-bottom: -3px;}
 
 #HinweisPrivat {
-    background-color: azure;
-    padding-bottom: 30px;
-    padding-top: 85px;}
+    align-content: center ;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 75px;
+    margin-right: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;}
 
-#HinweisPrivat h1 {text-align: center;}
+#HinweisPrivat h1 {
+    text-align: center;
+    margin-bottom: -10px;}
+
+#HinweisPrivat{
+    margin-bottom: -3px;}
+
+@media (max-width: 768px) {
+    #HinweisKrass {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #HinweisUrlaub {        
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    #HinweisPrivat {
+        margin-left: 25px;
+        margin-right: 25px;
+    }}
+
 
 #Öffnungszeiten {
     background-color: white;
