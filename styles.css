@@ -975,10 +975,15 @@ p {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         text-align: center;
     }
+
+    #legal-section p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 #legal-section {
-    padding-bottom: 15px;
+    padding-bottom: 35px;
 }
 
 #legal-section h1 {
@@ -993,7 +998,15 @@ p {
     margin-bottom: -10px;
 }
 
-#legaö-section p {
+#legal-section p {
+    padding-left: 150px;
+    padding-right: 150px;
     font-size: 16px;
     color: #555;
+}
+
+@media (max-width: 768px) {
+#legal-section p {
+    padding-left: 10px;
+    padding-right: 10px;}
 }
