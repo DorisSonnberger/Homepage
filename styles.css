@@ -107,18 +107,15 @@ html {
 
 
 /* Navbar Eigenschaften */
-/* Navbar Text */
 .navbar-nav a {
 	color:black;
 	margin-right: 5px;}
 
-/* Navbar Tex bei drüberhovern */
 .navbar-nav a:hover {
 	color:#3d8e3f;
 	transform: scale(1);
 	transition: 0.3s;}
 
-/* weitere Navbar Eigenschaften, alle wichtig aber schwierig zu erklären :) */
 .navbar-collapse {
     justify-content: flex-end;}
 
@@ -161,6 +158,15 @@ html {
     outline: none; 
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);}
     
+/* Dark Mode Styles */
+body.dark-mode .navbar-nav a {
+    color: white;
+}
+
+body.dark-mode .navbar-toggler .navbar-toggler-icon:before,
+body.dark-mode .navbar-toggler .navbar-toggler-icon:after {
+    background-color: white;
+}
 
 
 
@@ -949,10 +955,10 @@ p {
 
     .welcome-image {
         max-width: 100%;
-    }
-}
+    }}
 
 
+/* Styling für "Legal" Tab */ 
 .legal-box {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -961,8 +967,7 @@ p {
     margin-left: 100px;
     margin-right: 100px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+    text-align: center;}
 
 @media (max-width: 768px) {
     .legal-box {
@@ -979,34 +984,30 @@ p {
     #legal-section p {
         padding-left: 10px;
         padding-right: 10px;
-    }
-}
+    }}
 
 #legal-section {
-    padding-bottom: 35px;
-}
+    padding-bottom: 35px;}
 
 #legal-section h1 {
     font-size: 38px;
     color: #3d8e3f;
-    margin-bottom: -15px;
-}
+    margin-top: -10px;
+    padding-bottom: 5px;}
 
 #legal-section h2 {
     font-size: 28px;
     color: #3d8e3f;
     margin-bottom: -10px;
-}
+    margin-top: -40px;}
 
 #legal-section p {
     padding-left: 150px;
     padding-right: 150px;
     font-size: 16px;
-    color: #555;
-}
+    color: #555;}
 
 @media (max-width: 768px) {
 #legal-section p {
-    padding-left: 10px;
-    padding-right: 10px;}
-}
+    padding-left: 5px;
+    padding-right: 5px;}}
