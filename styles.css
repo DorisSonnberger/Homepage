@@ -158,20 +158,35 @@ html {
     outline: none; 
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);}
     
-/* Dark Mode Styles */
-body.dark-mode .navbar {
-    background-color: white !important;
-}
+    @media (prefers-color-scheme: dark) {
+        .navbar {
+            background-color: black !important;
+        }
+    
+        .navbar-nav a {
+            color: white;
+        }
+    
+        .navbar-toggler .navbar-toggler-icon:before,
+        .navbar-toggler .navbar-toggler-icon:after {
+            background-color: white;
+        }
+    }
 
-body.dark-mode .navbar-nav a {
-    color: black;
-}
-
-body.dark-mode .navbar-toggler .navbar-toggler-icon:before,
-body.dark-mode .navbar-toggler .navbar-toggler-icon:after {
-    background-color: black;
-}
-
+    @media (prefers-color-scheme: light) {
+        .navbar {
+            background-color: white !important;
+        }
+    
+        .navbar-nav a {
+            color: black;
+        }
+    
+        .navbar-toggler .navbar-toggler-icon:before,
+        .navbar-toggler .navbar-toggler-icon:after {
+            background-color: black;
+        }
+    }
 
 
 html, body {
