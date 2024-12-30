@@ -230,8 +230,6 @@ header h4 {
 
 #HinweisKrass {
     align-items: flex-start;
-    background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     margin-left: 70px;
@@ -253,7 +251,6 @@ header h4 {
 
 #HinweisUrlaub {
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     margin-left: 75px;
@@ -273,7 +270,6 @@ header h4 {
 #HinweisPrivat {
     align-content: center ;
     background-color: #fff;
-    border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
     margin-left: 75px;
