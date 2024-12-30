@@ -234,8 +234,8 @@ header h4 {
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 70px;
+    margin-right: 70px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     background-color: #3d8e3f;
@@ -291,18 +291,18 @@ header h4 {
 
 @media (max-width: 768px) {
     #HinweisKrass {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     #HinweisUrlaub {        
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
 
     #HinweisPrivat {
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: 30px;
+        margin-right: 30px;
     }}
 
 
@@ -470,9 +470,11 @@ p {
     margin-bottom: 15px;
 }
 
+
+
 .team-cards {
     display: flex;
-    justify-content: space-around;
+    justify-content:center;
     gap: 20px; /* Gleichmäßiger Abstand zwischen den Karten */
     flex-wrap: wrap;
     width: 100%;
@@ -899,84 +901,33 @@ p {
     text-align: center;
 }
 
-/* Willkommensabschnitt */
-#welcome {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding: 40px 20px;
-}
 
-.welcome-content {
-    display: flex;
-    justify-content: center;
-    gap: 00px;
-    align-items: center;
-    max-width: 1500px;
-}
-
-.welcome-image {
-    width: 100%;
-    max-width: 400px; /* Maximale Breite */
-    aspect-ratio: 1/1; /* Seitenverhältnis 4:3 */
-    object-fit: fill; /* Bild skalieren, ohne das Seitenverhältnis zu verlieren */
-    border-radius: 10px; /* Abgerundete Ecken */
-    padding-top: 20px;
-}
-
-.text-box {
-    flex: 1;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 38.75px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.text-box h1 {
-    font-size: 36px;
-    color: #3d8e3f;
-    margin-bottom: 15px;
-}
-
-.text-box p {
-    font-size: 18px;
-    color: #555;
-}
-
-.image-box {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.welcome-image {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-}
 
 /* Kontaktbereich mit Boxen */
 #contact-section {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 #contact-section .box {
     flex: 1;
 }
 
-#contact-section h3 {
+#contact-section h2 {
     color: #3d8e3f;
     margin-bottom: 15px;
     font-size: 30px;
+    margin-bottom: -5px;
+    margin-top: -40px;
 }
+
+#contact-section p {
+    font-size: 16px;
+    color: #555;
+    padding-left: 150px;
+    padding-right: 150px;}
 
 #contact-section ul {
     list-style: none;
@@ -1004,17 +955,45 @@ p {
     background-color: #3d8e3f;
 }
 
+@media (max-width: 768px) {
+    #contact-section p {
+        padding-left: 5px;
+        padding-right: 5px;}
+
+     #contact-section {
+        margin-left: -40px;
+        margin-right: -40px;}}
+
+
+
 /* Wahlarzt-Info */
+#wahlarzt-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;}
+
 #wahlarzt-section h2 {
-    font-size: 28px;
+    font-size: 30px;
     color: #3d8e3f;
-    margin-bottom: 15px;
-}
+    margin-bottom: -5px;
+    margin-top: -40px;}
 
 #wahlarzt-section p {
     font-size: 16px;
     color: #555;
-}
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: -5px;}
+
+@media (max-width: 768px) {
+    #wahlarzt-section p {
+        padding-left: 5px;
+        padding-right: 5px;}
+        
+     #wahlarzt-section {
+        margin-left: -40px;
+        margin-right: -40px;}}
 
 /* Responsivität */
 @media (max-width: 768px) {
