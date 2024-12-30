@@ -84,6 +84,10 @@
 html {
     scroll-behavior: smooth;}
 
+html, body {
+        width: 100%;
+        overflow-x: hidden;}
+
 /*Fade in Animation bei Webiste*/
 .fade-in {
     animation: fadeIn 1s forwards;}
@@ -108,6 +112,7 @@ html {
 
 /* Navbar Eigenschaften */
 .navbar-nav a {
+    font-weight: 400;
 	color:black;
 	margin-right: 5px;}
 
@@ -158,36 +163,44 @@ html {
     outline: none; 
     box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.3);}
     
- @media (prefers-color-scheme: dark) {
-        .navbar-toggler .navbar-toggler-icon:before,
-        .navbar-toggler .navbar-toggler-icon:after {
-            background-color: #4ea64f;
-        }
+/* Aktive Seite hervorheben */
+.navbar-nav .active {
+    font-weight: bold;
+    color: #4ea64f;
+    border-bottom: 2px solid #4ea64f;
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar-toggler .navbar-toggler-icon:before,
+    .navbar-toggler .navbar-toggler-icon:after {
+        background-color: #4ea64f;
     }
+
+    .navbar-nav .active {
+        color: #4ea64f;
+        border-bottom: 2px solid #4ea64f;
+    }
+}
 
 @media (prefers-color-scheme: light) {
-        .navbar {
-            background-color: white !important;
-        }
-    
-        .navbar-nav a {
-            color: black;
-        }
-    
-        .navbar-toggler .navbar-toggler-icon:before,
-        .navbar-toggler .navbar-toggler-icon:after {
-            background-color: #3d8e3f ;
-        }
+    .navbar {
+        background-color: white !important;
     }
 
+    .navbar-nav a {
+        color: black;
+    }
 
-html, body {
-    width: 100%;
-    overflow-x: hidden;}
+    .navbar-toggler .navbar-toggler-icon:before,
+    .navbar-toggler .navbar-toggler-icon:after {
+        background-color: #3d8e3f;
+    }
 
-html {
-    scroll-behavior: smooth;}
-
+    .navbar-nav .active {
+        color: #3d8e3f;
+        border-bottom: 2px solid #3d8e3f;
+    }
+}
 /* Header Eigenschaften */
 .header {
 	background-color:white;
@@ -499,16 +512,16 @@ p {
     width: 30%; /* Jede Karte nimmt 30% der Breite ein */
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;}
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Übergang auch im normalen Zustand */}
 
 .card h3 {
     font-size: 18px;
     margin-bottom: -6px;}
 
 .card:hover {
-    transform: translateY(-10px);
-    transition: 0.3s;
-}
+    transform: translateY(-10px);}
+    
 
 .details {
     text-align: center;
