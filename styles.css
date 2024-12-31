@@ -471,7 +471,7 @@ p {
 .team-cards {
     display: flex;
     justify-content:center;
-    gap: 20px; /* Gleichmäßiger Abstand zwischen den Karten */
+    gap: 30px; /* Gleichmäßiger Abstand zwischen den Karten */
     flex-wrap: wrap;
     width: 100%;
 }
