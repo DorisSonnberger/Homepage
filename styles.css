@@ -583,7 +583,7 @@ p {
 .footer-column a {
     font-size: 0.9em;
     color: #007bff;
-    text-decoration: none;
+    text-decoration:underline;
 }
 
 .footer-column a:hover {
@@ -628,7 +628,7 @@ p {
 
 .contact-table a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .contact-table a:hover {
