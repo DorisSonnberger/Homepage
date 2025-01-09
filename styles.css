@@ -173,7 +173,7 @@ html, body {
 @media (prefers-color-scheme: dark) {
     .navbar-toggler .navbar-toggler-icon:before,
     .navbar-toggler .navbar-toggler-icon:after {
-        background-color: #4ea64f;
+        background-color: #40d142;
     }
 
     .navbar-nav .active {
@@ -634,6 +634,21 @@ p {
 .contact-table a:hover {
     text-decoration: underline;
 }
+
+
+.opening-hours-contact {
+    margin-top: 20px;
+    font-size: 0.9em;
+    padding: 5px;
+    align-content: left;
+    margin: 0 auto; /* Zentriert die Tabelle horizontal */
+    text-align: left;
+}
+.opening-hours-contact td {
+    padding: 5px;
+    align-content: left;
+}
+
 
 /* Responsive Anpassungen */
 @media (max-width: 768px) {
