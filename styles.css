@@ -932,8 +932,7 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     height: 300px;
-    width: 200px;
-    padding-top: 80px;
+    padding-top: 60px;
     padding-right: 60px;
     padding-left: 60px;
 }
@@ -972,17 +971,73 @@ p {
     object-fit:fill;
 }
 
+
+
+@media (max-width: 1270px) {
+    #about-section .left-box {
+        height: 400px;
+        padding-top: 80px;
+        padding-right: 40px;
+        padding-left: 40px;
+    } 
+
+    #about-section .right-box {
+        width: 340px;
+        height: 400px;
+        display: flex; /* Flexbox aktivieren */
+        justify-content: center; /* Horizontal zentrieren */
+        align-items: center; /* Vertikal zentrieren */
+    }
+    
+    #about-section .right-box img {
+        width:300px;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 980px) {
+    #about-section .left-box {
+        height: 600px;
+    } 
+
+    #about-section .right-box {
+        width: 340px;
+        height: 600px;
+        display: flex; /* Flexbox aktivieren */
+        justify-content: center; /* Horizontal zentrieren */
+        align-items: center; /* Vertikal zentrieren */
+    }
+    
+    #about-section .right-box img {
+        width: 300px;
+        height: auto;
+    }
+}
+
 @media (max-width: 768px) {
+    #about-section .left-box {
+        flex: 2;        
+        text-align: center;
+        margin-left: 225px;
+        margin-right: 225px;
+    } 
+
     #about-section {
         flex-direction: column;
         text-align: center;
-        margin-left: -40px;
-        margin-right: -40px;
+        margin-left: -200px; /* Abstand komplett entfernt */
+        margin-right: -200px; /* Abstand komplett entfernt */
+    }
+
+    #about-section .right-box {
+        width: 340px;
+        height: auto;
     }
 
     #about-section .right-box img {
-        width: 350px;
-        width: ;
+        width: 300px;
+        height: auto;
     }
 }
 
@@ -1048,8 +1103,7 @@ p {
         margin-left: -40px;
         margin-right: -40px;}}
 
-
-
+    
 /* Wahlarzt-Info */
 #wahlarzt-section {
     display: flex;
