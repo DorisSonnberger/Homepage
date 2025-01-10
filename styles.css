@@ -1202,6 +1202,88 @@ p {
 
 
 @media (max-width: 768px) {
+
 #legal-section p {
     padding-left: 5px;
     padding-right: 5px;}}
+
+
+
+    .gallery {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .slider {
+        display: flex;
+        width: 300%; /* Bei 3 Bildern */
+        height: 100%;
+        transition: transform 1s ease;
+    }
+    
+    .slide {
+        flex: 1;
+        height: 100%;
+    }
+    
+    .slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    /* Desktop-Bilder */
+    .desktop {
+        display: block;
+    }
+    
+    .mobile {
+        display: none;
+    }
+    
+    /* Radio Buttons für Steuerung */
+    input[type="radio"] {
+        display: none;
+    }
+    
+    #slide1:checked ~ .slider {
+        transform: translateX(0);
+    }
+    
+    #slide2:checked ~ .slider {
+        transform: translateX(-100%);
+    }
+    
+    #slide3:checked ~ .slider {
+        transform: translateX(-200%);
+    }
+    
+    /* Automatische Rotation */
+    @keyframes slide-animation {
+        0%, 33.33% {
+            transform: translateX(0);
+        }
+        33.34%, 66.66% {
+            transform: translateX(-100%);
+        }
+        66.67%, 100% {
+            transform: translateX(-200%);
+        }
+    }
+    
+    .slider {
+        animation: slide-animation 12s infinite;
+    }
+    
+    /* Mobile Anpassungen */
+    @media (max-width: 768px) {
+        .desktop {
+            display: none;
+        }
+    
+        .mobile {
+            display: block;
+        }
+    }
