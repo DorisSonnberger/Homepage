@@ -1208,95 +1208,56 @@ p {
     padding-right: 5px;}}
 
 
-
- /* Slideshow-Container */
- .slideshow-container {
+ /* Allgemeine Einstellungen */
+.slideshow-container {
     width: 100%;
-    height: 1080px;
     overflow: hidden;
     position: relative;
 }
 
-/* Slides */
 .slides {
     display: flex;
-    animation: slide 20s infinite; /* 24 Sekunden für den gesamten Zyklus */
+    width: 100%;
+    animation: slide-animation 36s infinite ease-in-out;
 }
 
 .slides img {
     width: 100%;
-    height: auto;
     flex-shrink: 0;
-    display: none; /* Standardmäßig alle Bilder ausblenden */
+    object-fit: cover;
 }
 
-/* Desktop-Bilder */
+/* Desktop- und Mobile-Bilder anpassen */
 .slides img.desktop {
-    display: block; /* Nur Desktop-Bilder anzeigen */
+    display: block;
 }
 
-/* Mobile-Bilder */
 .slides img.mobile {
-    display: none; /* Mobile-Bilder standardmäßig ausblenden */
+    display: none;
 }
 
-/* Animation */
-@keyframes slide {
-    0%, 12.5% { transform: translateX(0); }            /* Bild 1 bleibt stehen */
-    12.5%, 25% { transform: translateX(-100%); }     /* Übergang zu Bild 2 */
-    25%, 37.5% { transform: translateX(-100%); }        /* Bild 2 bleibt stehen */
-    37.5%, 50% { transform: translateX(-200%); }        /* Übergang zu Bild 3 */
-    50%, 62.6% { transform: translateX(-200%); }     /* Bild 3 bleibt stehen */
-    62.5%, 75% { transform: translateX(-300%); }       /* Übergang zu Bild 4 */
-    75%, 82.5% { transform: translateX(-300%); }               /* Übergang zu Bild 5 */
-    82.5, 100% { transform: translateX(-400%); }               /* Übergang zu Bild 6 */
-    100% { transform: translateX(0); }                   /* Sanfter Übergang zurück zu Bild 1 */
-}
-
-/* Media Query für Mobilgeräte */
 @media (max-width: 768px) {
     .slides img.desktop {
-        display: none; /* Desktop-Bilder ausblenden */
+        display: none;
     }
 
     .slides img.mobile {
-        display: block; /* Mobile-Bilder anzeigen */
-    }
-
-    .slideshow-container {
-        margin-bottom: -00px;
-        width: 100%;
-        height: 1080px;
+        display: block;
     }
 }
 
-@media (max-width: 600px) {
-    .slideshow-container {
-        margin-bottom: -200px;
-    }
+/* Animation definieren */
+@keyframes slide-animation {
+    0% { transform: translateX(0); }
+    16.67% { transform: translateX(0); }
+    19.44% { transform: translateX(-100%); }
+    36.11% { transform: translateX(-100%); }
+    38.89% { transform: translateX(-200%); }
+    55.56% { transform: translateX(-200%); }
+    58.33% { transform: translateX(-300%); }
+    75% { transform: translateX(-300%); }
+    77.78% { transform: translateX(-400%); }
+    94.44% { transform: translateX(-400%); }
+    97.22% { transform: translateX(-500%); }
+    100% { transform: translateX(-500%); }
 }
-
-@media (max-width: 500px) {
-    .slideshow-container {
-        margin-bottom: -300px;
-    }
-}
-
-@media (max-width: 405px) {
-    .slideshow-container {
-        margin-bottom: -450px;
-    }
-}
-
-@media (max-width: 380px) {
-    .slideshow-container {
-        margin-bottom: -500px;
-    }
-}
-
-@media (max-width: 370px) {
-    .slideshow-container {
-        margin-bottom: -570px;
-    }
-}
-
