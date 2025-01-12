@@ -1246,18 +1246,72 @@ p {
     }
 }
 
-/* Animation definieren */
 @keyframes slide-animation {
-    0% { transform: translateX(0); }
-    16.67% { transform: translateX(0); }
-    19.44% { transform: translateX(-100%); }
-    36.11% { transform: translateX(-100%); }
-    38.89% { transform: translateX(-200%); }
-    55.56% { transform: translateX(-200%); }
-    58.33% { transform: translateX(-300%); }
-    75% { transform: translateX(-300%); }
-    77.78% { transform: translateX(-400%); }
-    94.44% { transform: translateX(-400%); }
-    97.22% { transform: translateX(-500%); }
-    100% { transform: translateX(-500%); }
+    0% { transform: translateX(0); } /* Erstes Bild */
+    16.67% { transform: translateX(0); } /* Erstes Bild bleibt stehen */
+    19.44% { transform: translateX(-100%); } /* Zweites Bild */
+    36.11% { transform: translateX(-100%); } /* Zweites Bild bleibt stehen */
+    38.89% { transform: translateX(-200%); } /* Drittes Bild */
+    55.56% { transform: translateX(-200%); } /* Drittes Bild bleibt stehen */
+    58.33% { transform: translateX(-300%); } /* Viertes Bild */
+    75% { transform: translateX(-300%); } /* Viertes Bild bleibt stehen */
+    77.78% { transform: translateX(-400%); } /* Fünftes Bild */
+    94.44% { transform: translateX(-400%); } /* Fünftes Bild bleibt stehen */
+    97.22% { transform: translateX(-500%); } /* Letztes Bild */
+    100% { transform: translateX(-500%); } /* Letztes Bild bleibt stehen */
+    103.22% { transform: translateX(0); } /* Zurück zum ersten Bild */
+}
+
+
+.Bilder-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0px;
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-top: -20px;
+    margin-bottom: 75px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Bilder-box img {
+    width: 100%; /* Das Bild füllt die gesamte Breite der Box */
+    height: auto; /* Die Höhe wird proportional angepasst */
+    max-width: 100%; /* Verhindert, dass das Bild die Box überschreitet */
+    border-radius: 10px; /* Optional: Abgerundete Ecken wie die Box */
+    object-fit: cover; /* Passt das Bild an, ohne Verzerrung */
+}
+
+#Bilder-box {
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+    padding-top: 40px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .Bilder-box {
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: -20px;
+        margin-bottom: 75px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .Bilder-box {
+        margin-left: 75px;
+        margin-right: 75px;
+        margin-top: -20px;
+        margin-bottom: 75px;
+    }
+
 }
