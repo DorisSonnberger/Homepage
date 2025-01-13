@@ -1209,10 +1209,22 @@ p {
 
 
  /* Allgemeine Einstellungen */
-.slideshow-container {
-    width: 100%;
+ .slideshow-container {
+    border-radius: 10px;
+    margin: 0 70px; /* Gleicher Abstand links und rechts */
+    width: calc(100% - 140px); /* Breite um die Margins angepasst */
     overflow: hidden;
-    position: relative;
+    position: relative; /* "center" ist kein gültiger Wert */
+    box-sizing: border-box; /* Wichtig für korrekte Breitenberechnung */
+}
+
+.slideshow-container-kontakt {
+    border-radius: 10px;
+    margin: 0 250px; /* Gleicher Abstand links und rechts */
+    width: calc(100% - 500px); /* Breite um die Margins angepasst */
+    overflow: hidden;
+    position: relative; /* "center" ist kein gültiger Wert */
+    box-sizing: border-box; /* Wichtig für korrekte Breitenberechnung */
 }
 
 .slides {
@@ -1303,9 +1315,27 @@ p {
         margin-bottom: 75px;
     }
 
+    .slideshow-container-kontakt {
+        background-color: #3d8e3f;
+        margin-top: -10px;
+        margin: 0 100px; /* Gleicher Abstand links und rechts */
+        width: calc(100% - 200px); /* Breite um die Margins angepasst */
+    }
+
 }
 
 @media (max-width: 768px) {
+
+    .slideshow-container {
+        margin: 0 30px; /* Gleicher Abstand links und rechts */
+        width: calc(100% - 60px); /* Breite um die Margins angepasst */
+    }
+
+    .slideshow-container-kontakt {
+        margin-top: -10px;
+        margin: 0 50px; /* Gleicher Abstand links und rechts */
+        width: calc(100% - 100px); /* Breite um die Margins angepasst */
+    }
 
     .Bilder-box {
         margin-left: 75px;
